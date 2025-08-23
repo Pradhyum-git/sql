@@ -1,9 +1,13 @@
+/*
+==============================================================================================
+          							JOINS
+        1)NO JOIN
+        2)Inner Join
+        3)Left Join
+        4)Right Join
+        5)Full outer join
 -- ==============================================================================================
---           							JOINS
---      1)Basic Joins:NO JOIN,Inner Join,Left Join,Right Join,Full outer join,Cross Join
---      2)Advanced Joins:
--- ==============================================================================================
-
+*/
 -- No join
 USE salesdb;
 SELECT 
@@ -66,12 +70,4 @@ orders o
 ON c.customer_id=o.customer_id;
 
 
--- Cross Join : combines every row in table1 with every row in table2
-
-SELECT
-c.customer_id,
-o.order_id
-FROM customers c
-CROSS JOIN
-orders o;
 
